@@ -1,14 +1,11 @@
 
-from turtle import clear
-
-
 class Footballer:
 
     def __init__(self, name="", club="", position="", number=0):
-        self.name = name
-        self.club = club
-        self.position = position
-        self.number = number
+        self.__name = name
+        self.__club = club
+        self.__position = position
+        self.__number = number
 
     def display(self):
         print("Player:", self.__name)
@@ -19,5 +16,6 @@ class Footballer:
 
 Salah = Footballer("Mohammad Salah", "Liverpool", "Right Forward", 11)
 
-print(getattr(Salah, "club"))
+print(Salah.club)
+
 
